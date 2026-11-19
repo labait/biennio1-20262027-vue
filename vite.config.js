@@ -3,8 +3,10 @@ import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
+// base: '/' in locale; in produzione (gh-pages) viene sovrascritta
+// dal flag --base nello script "predeploy" di package.json
 export default defineConfig({
-  base: '/biennio2-20262027-vue/',
+  base: '/',
   plugins: [
     vue(),
     tailwindcss()

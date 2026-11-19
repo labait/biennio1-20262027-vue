@@ -1,6 +1,5 @@
 <script setup>
 import { ref } from 'vue'
-import router from '../router';
 const menuItems = ref([
   { name: 'Home', path: '/' },
   { name: 'Portfolio', path: '/portfolio' },
@@ -9,9 +8,9 @@ const menuItems = ref([
 </script>
 
 <template>
-  <a id="first" class="text-[12vw] font-bold mb-4" href="/">
+  <router-link id="first" class="text-[12vw] font-bold mb-4" to="/">
     hello World!
-  </a>
+  </router-link>
   <ul id="menu" class="flex flex-row space-x-4 mb-4">
     <li v-for="item in menuItems" :key="item.name">
       <router-link :to="item.path">{{ item.name }}</router-link>
