@@ -12,8 +12,8 @@ provide('projects', projects)
 </script>
 
 <template>
-  <main class="min-h-screen flex flex-col items-center justify-center mx-auto container -border mb-4">
-    <Headline class="mb-4" />
+  <main class="min-h-screen flex flex-col justify-center mx-auto container -border mb-4">
+    <Headline class="mb-8" />
     <router-view />
   </main>
 </template>
