@@ -13,7 +13,7 @@ provide('projects', projects)
 
 <template>
   <main class="min-h-screen flex flex-col justify-center mx-auto container -border mb-4">
-    <Headline class="mb-8" />
+    <Headline />
     <router-view />
   </main>
 </template>
