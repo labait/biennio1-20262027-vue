@@ -8,5 +8,5 @@ const projects = inject('projects')
   <h2 class="text-4xl font-bold mb-2">
     Portfolio
   </h2>
-  <ProjectsList :items="projects" />
+  <ProjectsList :items="projects" mode="slideshow" />
 </template>
