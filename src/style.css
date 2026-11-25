@@ -1,1 +1,26 @@
 @import 'tailwindcss';
+
+/* tema: light di default, dark quando il body ha la classe .dark */
+body {
+  background-color: #fff;
+  color: #111;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: #111;
+  color: #fff;
+}
+
+/* tondo dietro l'icona del toggle: segue lo sfondo del tema,
+   il bordo lo stacca dagli elementi della pagina su cui galleggia */
+.theme-toggle {
+  background-color: #fff;
+  border: 1px solid #1113;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+body.dark .theme-toggle {
+  background-color: #111;
+  border-color: #fff3;
+}
