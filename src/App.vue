@@ -2,6 +2,7 @@
 import { ref, provide, onMounted } from 'vue'
 import Headline from './components/Headline.vue'
 import ThemeToggle from './components/ThemeToggle.vue'
+import Footer from './components/Footer.vue'
 
 const projects = ref([]) 
 
@@ -48,6 +49,7 @@ provide('projects', projects)
     <Headline />
     <router-view />
   </main>
+  <Footer />
   <ThemeToggle />
 </template>
 
